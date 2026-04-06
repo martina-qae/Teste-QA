@@ -4,27 +4,6 @@ Este repositório contém a solução do **Teste Técnico de QA**, contemplando 
 
 ---
 
-## 📌 Índice
-
-- #visão-geral
-- #tecnologias-utilizadas
-- #automação-web
-  - #cenários-automatizados
-  - #como-executar-web
-- #automação-de-api
-  - #endpoints-testados
-  - #como-executar-api
-  - #relatórios-api
-- #teste-de-performance
-  - #cenário-testado
-  - #critério-de-aceitação
-  - #como-executar-performance
-  - #resultados-e-conclusão
-- #cicd
-- #considerações-finais
-
----
-
 ## 📖 Visão Geral
 
 O objetivo deste projeto é demonstrar conhecimentos em **qualidade de software**, aplicando boas práticas de automação de testes e análise de desempenho, garantindo confiabilidade, legibilidade e fácil execução em qualquer sistema operacional (Linux, Windows ou MacOS).
@@ -85,33 +64,28 @@ Os testes validam:
 - Google Chrome
 - ChromeDriver compatível
 
-### Execução
 ```bash
 mvn clean test
+```
 
+```bash
 
-✅ **Compatível com Apache JMeter 5.6+**
-
-***
+✅ Compatível com Apache JMeter 5.6+
 
 # 🎯 O que este `.jmx` faz (explicação técnica)
 
 ## 🔹 Test Plan
 
-*   Nome: **BlazeDemo - Compra de Passagem**
-*   Objetivo: Teste de carga e pico para o fluxo de compra
-
-***
+   Nome: BlazeDemo - Compra de Passagem
+   Objetivo: Teste de carga e pico para o fluxo de compra
 
 ## 🔹 Thread Group — Teste de Carga
 
-*   **Usuários (Threads):** 250
-*   **Ramp-up:** 10 segundos
-*   **Loop:** contínuo (ideal para medir throughput)
+*   Usuários (Threads):250
+*   Ramp-up: 10 segundos
+*  Loop: contínuo (ideal para medir throughput)
 
 ➡️ Configurado para atender o critério de **250 requisições por segundo** conforme solicitado no desafio.
-
-***
 
 ## 🔹 Samplers HTTP
 
@@ -146,10 +120,6 @@ Depois, abra no navegador:
 
 ```text
 .../performance-tests/report/index.html
-```
-
-```bash
-jmeter
 ```
 
 *   File → Open → `blazedemo_test.jmx`
